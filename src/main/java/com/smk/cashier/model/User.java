@@ -5,11 +5,11 @@ public class User extends Model {
     private String password;
 
     public String getUsername() {
-        return username;
+        return userName;
     }
 
     public void setUsername(String username) {
-        this.username = username;
+        this.userName = userName;
     }
 
     public String getPassword() {
@@ -23,7 +23,7 @@ public class User extends Model {
     @Override
     public String toString() {
         return "User{" +
-                "username='" + username + '\'' +
+                "username='" + userName + '\'' +
                 ", password='" + password + '\'' +
                 ", dateCreated=" + dateCreated +
                 ", lastModified=" + lastModified +
