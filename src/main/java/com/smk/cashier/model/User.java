@@ -1,7 +1,7 @@
 package com.smk.cashier.model;
 
 public class User extends Model {
-    private String userName;
+    private String username;
     private String password;
 
     public String getUsername() {
