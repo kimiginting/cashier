@@ -1,6 +1,6 @@
 package com.smk.cashier.model;
 
-public class User extends Mode {
+public class User extends Model {
     private String userName;
     private String password;
 
