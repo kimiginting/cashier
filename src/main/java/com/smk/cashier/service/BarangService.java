@@ -15,8 +15,8 @@ public class BarangService {
     private static BarangService barangService = null;
     private BarangService() {
         try {
-            barangServiceReader = new FileReader("barang.txt");
             barangServiceWriter = new FileWriter("barang.txt");
+            barangServiceReader = new FileReader("barang.txt");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -39,6 +39,11 @@ public class BarangService {
     }
 
     private void writeFile(){
+        try {
+            barangServiceWriter = new FileWriter("barang.txt");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         BufferedWriter bufferedWriter = new BufferedWriter(barangServiceWriter);
         for (int i = 0; i < barangList.size(); i++) {
             Barang barang = barangList.get(i);
