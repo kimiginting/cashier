@@ -84,4 +84,9 @@ public class StokDao implements Dao<Stok, Integer>{
     public void delete(Stok stok) {
 
     }
+
+    @Override
+    public Collection<Stok> search(String keyword) {
+        return null;
+    }
 }
